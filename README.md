@@ -10,17 +10,18 @@ This project implements a hybrid log classification system, combining three comp
 ### LLM (Large Language Models):
 - Used for handling complex patterns when sufficient labeled training data is not available.
 - Provides a fallback or complementary approach to the other methods.
-![https://github.com/TranQuocDat0405/Log_Classification_System/blob/main/resources/arch.png?raw=true]
+
+![](https://github.com/TranQuocDat0405/Log_Classification_System/blob/main/resources/arch.png)
 ## Folder Structure
-1. training/:
+1. `training/`:
    - Contains the code for training models using Sentence Transformer and Logistic Regression.
    - Includes the code for regex-based classification.
-2. models/:
+2. `models/`:
    - Stores the saved models, including Sentence Transformer embeddings and the Logistic Regression model.
-3. resources/:
+3. `resources/`:
    - This folder contains resource files such as test CSV files, output files, images, etc.
 4. Root Directory:
-   - Contains the FastAPI server code (server.py).
+   - Contains the FastAPI server code (`server.py`).
 
 ## Setup Instructions
 1. Install Dependencies: Make sure you have Python installed on your system. Install the required Python libraries by running the following command:
@@ -32,13 +33,14 @@ This project implements a hybrid log classification system, combining three comp
    uvicorn server:app --reload
    ```
 Once the server is running, you can access the API at:
-- http://127.0.0.1:8000/ (Main endpoint)
-- http://127.0.0.1:8000/docs (Interactive Swagger documentation)
-- http://127.0.0.1:8000/redoc (Alternative API documentation)
+- `http://127.0.0.1:8000/` (Main endpoint)
+- `http://127.0.0.1:8000/docs` (Interactive Swagger documentation)
+- `http://127.0.0.1:8000/redoc` (Alternative API documentation)
 
 ## Usage
 Upload a CSV file containing logs to the FastAPI endpoint for classification. Ensure the file has the following columns:
-* source
-* log_message
-The output will be a CSV file with an additional column target_label, which represents the classified label for each log entry.
+* `source`
+* `log_message`
+
+The output will be a CSV file with an additional column `target_label`, which represents the classified label for each log entry.
 
