@@ -28,7 +28,7 @@ This project implements a hybrid log classification system, combining three comp
    ```
    pip install -r requirements.txt
    ```
-3. Run the FastAPI Server: To start the server, use the following command:
+2. Run the FastAPI Server: To start the server, use the following command:
    ```
    uvicorn server:app --reload
    ```
