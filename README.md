@@ -26,7 +26,7 @@ This project implements a hybrid log classification system, combining three comp
 ## Setup Instructions
 1. Install Dependencies: Make sure you have Python installed on your system. Install the required Python libraries by running the following command:
    ```
-   pip install -r requirements.txt
+   pip install -r requirement.txt
    ```
 2. Run the FastAPI Server: To start the server, use the following command:
    ```
